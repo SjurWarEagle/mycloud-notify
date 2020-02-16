@@ -9,7 +9,7 @@ export class AppService {
       token: process.env['PUSHOVER_TOKEN'],
       // onerror: function(error) {},
       // update the list of sounds every day - will prevent app from exiting.
-      update_sounds: true,
+      'update_sounds': true,
     });
 
     const msg = {

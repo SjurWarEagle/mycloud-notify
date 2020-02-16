@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mycloud-notify:
+    build:
+      context: ..
+      dockerfile: ./Docker/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      IFTTT_WEBHOOK: yourToken
+      PUSHOVER_TOKEN: yourToken
+      PUSHOVER_USER: yourToken

@@ -37,3 +37,4 @@ lerna-debug.log*
 
 
 Docker/*_private.sh
+Docker/*_private.yml
