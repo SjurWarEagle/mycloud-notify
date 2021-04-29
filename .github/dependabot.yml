@@ -1,0 +1,68 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "08:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.18.0
+    - 4.19.0
+    - 4.20.0
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.17.0
+    - 4.19.0
+    - 4.20.0
+  - dependency-name: eslint
+    versions:
+    - 7.22.0
+    - 7.23.0
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.34
+    - 14.14.37
+  - dependency-name: "@nestjs/schematics"
+    versions:
+    - 7.3.0
+    - 7.3.1
+  - dependency-name: "@nestjs/cli"
+    versions:
+    - 7.6.0
+  - dependency-name: ts-loader
+    versions:
+    - 8.0.17
+    - 8.0.18
+    - 8.1.0
+  - dependency-name: rxjs
+    versions:
+    - 6.6.6
+    - 6.6.7
+  - dependency-name: "@nestjs/common"
+    versions:
+    - 7.6.13
+    - 7.6.14
+    - 7.6.15
+  - dependency-name: "@nestjs/core"
+    versions:
+    - 7.6.14
+    - 7.6.15
+  - dependency-name: "@types/jest"
+    versions:
+    - 26.0.21
+  - dependency-name: ts-jest
+    versions:
+    - 26.5.4
+  - dependency-name: "@nestjs/testing"
+    versions:
+    - 7.6.13
+    - 7.6.14
+  - dependency-name: npm-check-updates
+    versions:
+    - 11.2.2
+    - 11.3.0
+  rebase-strategy: disabled
